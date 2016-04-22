@@ -46,7 +46,10 @@
 								<a href="page.php">Sobre mim</a>
 							</li>
 							<li>
-								<a href="page.php">Contato</a>
+								<a href="page.php">Sobre mim</a>
+							</li>
+							<li>
+								<a href="#">Feed</a>
 							</li>
 						</ul>
 					</div>

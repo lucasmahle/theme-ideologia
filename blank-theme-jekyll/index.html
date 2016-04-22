@@ -1,14 +1,52 @@
 ---
 layout: default
-title: "Home Page"
-fulltitle: "My New Website | Update Coming August 2004" 
-excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead inside!
 ---
-<!-- fulltitle: This overrides the default page title, which is "{{page.tite}} | {{site.title}}" -->
-<!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
 
-
-<section>
-  <h1>{{site.title}}</h1>
-  <h4>{{site.tagline}}. Isn't your website beautiful?!</h4>
+<section class="container">
+	<div class="post-container">
+		{% for post in site.posts %}
+			<article class="post-item">
+				<div class="post-header{% if post.image %} with-image{% else %} no-image{% endif %}">
+					<a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+						<div class="bg-image" style="background-image: url('{{ post.image }}')"></div>
+					</a>
+				</div>
+				<header class="post-title">
+					<h2 class="title">
+						<a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
+					</h2>
+				</header>
+				<div class="post-excerpt">
+					Cake pastry pastry cookie. Sweet jelly beans wafer brownie cake cake candy. Jujubes icing jelly gingerbread cake. Fruitcake gummies icing sweet roll. Cupcake jujubes halvah tiramisu powder cheesecake topping. Jelly-o marshmallow liquorice fruitcake. Powder soufflé.
+				</div>
+				<footer class="post-footer">
+					<a class="btn btn-default btn-readmore" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+						<i class="fa fa-chevron-right icon" aria-hidden="true"></i>
+						<i class="fa fa-thumbs-o-up icon-hover" aria-hidden="true"></i>
+						Ver post
+					</a>
+				</footer>
+			</article>
+		{% endfor %}
+	</div>
 </section>
+
+<div class="text-center">
+	<ul class="pagination">
+		<li>
+			<a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+		</li>
+		<li>
+			<a href="#">1</a>
+		</li>
+		<li class="active">
+			<a href="#">2</a>
+		</li>
+		<li>
+			<a href="#">3</a>
+		</li>
+		<li>
+			<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</li>
+	</ul>
+</div>
