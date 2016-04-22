@@ -12,8 +12,8 @@
 		<!-- VENDOR -->
 			<script src="assets/js/less.js"></script>
 			
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/dropdown.min.js"></script>
 		<script src="assets/js/main.js"></script>
 	</head>
 	<body>
@@ -28,7 +28,7 @@
 					</button>
 				</div>
 				<nav class="collapse navbar-collapse">
-					<a href="#">
+					<a href="index.php">
 						<img src="assets/img/logo-blog.png" class="logo">
 					</a>
 					<div class="navbar-itens">
@@ -43,10 +43,10 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">Sobre mim</a>
+								<a href="page.php">Sobre mim</a>
 							</li>
 							<li>
-								<a href="#">Contato</a>
+								<a href="page.php">Contato</a>
 							</li>
 						</ul>
 					</div>

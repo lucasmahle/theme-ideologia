@@ -43,66 +43,7 @@
                 <p>Fruitcake gummies icing sweet roll. Cupcake jujubes halvah tiramisu powder cheesecake topping. Jelly-o marshmallow liquorice fruitcake. Powder soufflé candy canes cake muffin jelly-o liquorice chocolate bar danish.</p>
                 <p>Brownie wafer apple pie sugar plum cotton candy jelly beans lollipop. Sweet lemon drops danish sweet roll biscuit. Jujubes cookie gingerbread.</p>
             </div>
-
-            <footer class="post-meta">
-                <span>Compartilhe: </span> 
-                <small> 
-                    <!-- Share Twiiter --> 
-                    <a class="share-icon" href="#">
-                        <i class="fa fa-twitter-square"></i>
-                    </a>
-                    <!-- Share Facebook -->
-                    <a class="share-icon" href="#">
-                        <i class="fa fa-facebook-square"></i>
-                    </a>
-                </span>
-
-                <span class="pull-right">Postado em 25/07/2016</span>
-            </footer>
         </article>
-        
-        <section class="post-comments">
-            <h3><i class="fa fa-comments-o" aria-hidden="true"></i> Comentários</h3>
-
-            <div id="disqus_thread"></div>
-
-            <script type="text/javascript">
-              var disqus_loaded = false;
-              var disqus_shortname = 'lucasmahle';
-              var disqus_identifier = 'teste-de-post';
-              var disqus_title = 'Teste de Post';
-              var disqus_url = 'http://lucasmahle.com.br';
-              var scroll_target = document.getElementById("disqus_thread");
-              /*var disqus_developer = 1;*/
-              function load_disqus(){
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                 
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0])
-                  .appendChild(dsq);
-                
-                disqus_loaded = true;
-              };
-              function scroll_event(){
-                if ((window.innerHeight + window.scrollY) >= (scroll_target.offsetHeight - 200)) {
-                    
-                    if (disqus_loaded==false){
-                        load_disqus();
-                    }
-                }
-              };
-              if(document.addEventListener){
-                window.addEventListener('scroll', scroll_event, false);
-              } else if(document.attachEvent){
-                window.attachEvent('onscroll', scroll_event, false);
-              }
-            </script>
-
-            <noscript>
-              Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
-            </noscript>
-        </section>
     </div>
     
 <?php require_once('footer.php'); ?>

@@ -1,0 +1,23 @@
+{
+  "name": "theme-ideologia",
+  "version": "1.0.0",
+  "description": "A free and open sorce Jekyll Theme. \"Ideologia\" is named after the song ideology of the singer Cazuza.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasmahle/theme-ideologia.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Jekyll",
+    "Theme"
+  ],
+  "author": "Lucas Mahle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasmahle/theme-ideologia/issues"
+  }
+}
