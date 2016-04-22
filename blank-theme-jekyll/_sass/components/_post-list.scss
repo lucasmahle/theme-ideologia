@@ -1,0 +1,60 @@
+.post-container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.post-item {
+	border-radius: 7px;
+	overflow: hidden;
+	background-color: #ffffff;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 15px;
+	}
+	
+	.post-header {
+		&.no-image {
+			height: 1px;
+			.bg-image {
+				display: none;
+			} 
+		}
+		height: 285px;
+	}
+	.post-title {
+		text-align: center;
+		margin-top: 30px;
+		
+		.title {
+			margin: 0;
+			font-size: 21px;
+			font-weight: bold;
+		}
+		
+		a {
+			color: $text-color;
+		}
+	}
+	.post-excerpt {
+		padding: 25px;
+	}
+	.post-footer {
+		text-align: center;
+		
+		.btn-readmore {
+			.icon-hover {
+				display: none;
+			}
+			
+			&:hover {
+				.icon {
+					display: none;
+				}
+				.icon-hover {
+					display: inline;
+				}
+			}
+		}
+	}
+}
