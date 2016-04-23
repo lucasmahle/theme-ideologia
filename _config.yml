@@ -1,0 +1,52 @@
+name: Playground Lucas Mahle
+title: Lucas Mahle
+description: "Blog de estudos e playground de código"
+keywords: "Jekyll, blog, desenvolvimento, web, progração, SEO, PHP, jQuery, Angularjs, Javascript, HTML, PHP, Ruby, Python"
+url: http://lucasmahle.com.br
+baseurl: ""
+image: assets/img/social-share.png
+
+# Social links
+social_links:
+  - site: facebook
+    url: lucas.mahle
+    icon: facebook
+  - site: twitter
+    url: _lucasmahle
+    icon: twitter
+  - site: github
+    url: lucasmahle
+    icon: github
+
+# FB APP
+fb_app: 218698578491992
+# Build settings
+paginate: 2
+paginate_path: "/page/:num"
+permalink   : /:year/:month/:title/
+markdown    : kramdown
+highlighter : rouge
+gems        : [jekyll-paginate]
+sass:
+  style: compressed
+
+# Metric
+google_analytics: UA-62042091-2
+
+# Me
+author:
+  name      : Lucas Mahle
+  email     : lucassmahle@gmail.com
+  url       : http://lucasmahle.com.br
+  facebook  : http://facebook.com/lucasmahle
+  github    : http://github.com/lucasmahle
+  linkedin  : http://linkedin.com/in/lucasmahle
+
+# Share
+repo: http://github.com/lucasmahle
+disqus_shortname: "lucasmahle"
+twitter_username: "_lucasmahle"
+share_twitter: true
+share_facebook: true
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="container">
+	<div class="post-container">
+		{% for post in paginator.posts %}
+			{% include article.html %}
+		{% endfor %}
+	</div>
+</section>
+
+<div class="text-center">
+	{% include pagination.html %}
+</div>
