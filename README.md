@@ -1,8 +1,11 @@
-# Blank Theme - Jekyll
-An almost empty "starter theme" for Jekyll projects.
+# Ideology Theme - Jekyll
+A free, open source, theme for Jekyll based on bootstrap.
+"Ideologia" is a tribute to the song Ideology of Cazuza.
 
-Most themes I see say "starter theme", but they're filled with stupid SASS grids and shit. I made this as the lowest common denominator for almost all developers. 
-
-It's set up for SASS, meta tags, favicons, a home page, etc. Everything else is up to you.
-
-Now start building some dope-ass shit, playboy.
+## Todo:
+- Criar pasta com dados
+- Abstrair textos e linguagens do tema
+- Melhorar Menu
+- Criar posts de exemplos
+- Usar como tema do blog
+- Criar versão de divulgação (traduzir textos)

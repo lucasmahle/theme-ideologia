@@ -8,6 +8,12 @@
 				</span>
 			</a>
 		{% endfor %}
+		<a href="{{ "/feed.xml" : prepend: site.baseurl }}" title="Feed" target="_blank">
+			<span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-feed fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
 	</div>
 
 	<div>
@@ -17,7 +23,3 @@
 		<small>Theme by <a href="http://lucasmahle.com.br/" title="Theme author">lucasmahle.com.br</a></small>
 	</div>
 </footer>
-<!-- Loading in some scripts here -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="{{ '/assets/js/dropdown.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>

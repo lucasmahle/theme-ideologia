@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<section class="container">
+	<div class="page-content">		
+		<header class="post-header">
+			<div class="title text-center">
+				<h1>Categorias</h1>
+			</div>
+		</header>
+
+		<div class="the-content post-categories">
+			{% for tag in site.categories %} 
+				<h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
+				<ul class="post-list">
+					{% assign pages_list = tag[1] %}  
+					{% for post in pages_list %}
+						{% if post.title != null %}
+							{% if group == null or group == post.group %}
+								<li>
+									<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+										<div class="post-li">
+											{{ post.title }}
+											<span class="pull-right">{{ post.date | date: "%d/%m/%Y" }}</span>
+										</div>
+									</a>
+								</li>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+					{% assign pages_list = nil %}
+					{% assign group = nil %}
+				</ul>
+			{% endfor %}
+		</div>
+	</div>
+</section>

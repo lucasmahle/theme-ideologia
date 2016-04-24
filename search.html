@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<section class="container">
+	<div class="page-content">		
+		<header class="post-header">
+			<div class="title text-center">
+				<h1>Buscar post</h1>
+			</div>
+			<div class="text-center search-form">
+				<label for="search">Buscar post:</label>
+				<input type="text" class="form-control" id="search" placeholder="Buscar post">
+			</div>
+		</header>
+
+		<div class="the-content post-categories">
+			<ul class="post-list" id="result"></ul>
+		</div>
+	</div>
+</section>
+<script>
+	var jekyll_search = {
+		searchInput: document.getElementById('search'),
+		resultsContainer: document.getElementById('result'),
+		json: '{{ site.baseurl }}/search.json',
+		noResultsText: '<div class="text-center">Nenhum resultado encontrado</div>',
+		searchResultTemplate: 
+			'<li>' +
+				'<a href="{url}" title="{title}">' +
+					'<div class="post-li">' +
+						'{title}<span class="pull-right">{date}</span>' +
+					'</div>' +
+				'</a>' +
+			'</li>',
+	}
+
+	SimpleJekyllSearch(jekyll_search);
+</script>

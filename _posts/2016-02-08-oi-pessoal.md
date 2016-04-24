@@ -4,7 +4,7 @@ title: "Post tile"
 date: 2016-02-08 17:52:03
 image: '/assets/posts/oi-pessoal/primeiro-post.jpg'
 description: ''
-categories: Parafernalha
+categories: Bootstrap
 ---
 
 # h1

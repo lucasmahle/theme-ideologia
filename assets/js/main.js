@@ -1,7 +1,7 @@
 ;(function(){
 	'use strict';
 	var	init = function(){
-		// Variables
+		// Jquery Script
 	};
 
 	$(document).ready(init);

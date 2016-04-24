@@ -27,16 +27,16 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #F5F8FA !default;
+$body-bg:               #2D9BBF !default;
 //** Global text color on `<body>`.
 $text-color:            #212121 !default;
 
 //** Global textual link color.
-$link-color:            #B73333 !default;
+$link-color:            #0F3440 !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      #1E687F !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 //== Typography
@@ -454,11 +454,11 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 
 $pagination-color:                     $link-color !default;
 $pagination-bg:                        #fff !default;
-$pagination-border:                    #ddd !default;
+$pagination-border:                    #fff !default;
 
 $pagination-hover-color:               #fff !default;
 $pagination-hover-bg:                  $link-hover-color !default;
-$pagination-hover-border:              #ddd !default;
+$pagination-hover-border:              $link-hover-color !default;
 
 $pagination-active-color:              #fff !default;
 $pagination-active-bg:                 $link-color !default;
@@ -466,7 +466,7 @@ $pagination-active-border:             $link-color !default;
 
 $pagination-disabled-color:            $gray-light !default;
 $pagination-disabled-bg:               #fff !default;
-$pagination-disabled-border:           #ddd !default;
+$pagination-disabled-border:           #fff !default;
 
 
 //== Pager
