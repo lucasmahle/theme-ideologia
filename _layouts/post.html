@@ -7,7 +7,7 @@ layout: default
 		<article class="post-open">
 			<header class="post-header">
 				{% if page.image %}
-					<img src="{{ page.image }}" class="img-responsive">
+					<img src="{{ site.content | prepend: site.baseurl }}{{ page.image }}" alt="Main picture of the post {{ page.title }}" class="img-responsive">
 				{% endif %}
 
 				<div class="title text-center">

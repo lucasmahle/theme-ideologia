@@ -1,7 +1,7 @@
 <article class="post-item">
 	<div class="post-header{% if post.image %} with-image{% else %} no-image{% endif %}">
 		<a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
-			<div class="bg-image" style="background-image: url('{{ post.image }}')"></div>
+			<div class="bg-image" style="background-image: url('{{ site.content | prepend: site.baseurl }}{{ post.image }}')"></div>
 		</a>
 	</div>
 	<header class="post-title">
@@ -11,7 +11,6 @@
 	</header>
 	<div class="post-excerpt">
 		{{ post.description }}
-		Cake pastry pastry cookie. Sweet jelly beans wafer brownie cake cake candy. Jujubes icing jelly gingerbread cake. Fruitcake gummies icing sweet roll. Cupcake jujubes halvah tiramisu powder cheesecake topping. Jelly-o marshmallow liquorice fruitcake. Powder soufflé.
 	</div>
 	<footer class="post-footer">
 		<a class="btn btn-default btn-readmore" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">

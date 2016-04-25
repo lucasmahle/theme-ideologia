@@ -5,6 +5,7 @@ keywords: "Jekyll, blog, desenvolvimento, web, progração, SEO, PHP, jQuery, An
 url: http://lucasmahle.com.br
 baseurl: ""
 image: assets/img/social-share.png
+content: /assets/content
 
 # Social links
 social_links:
@@ -21,7 +22,7 @@ social_links:
 # FB APP
 fb_app: 218698578491992
 # Build settings
-paginate: 2
+paginate: 3
 paginate_path: "/page/:num"
 permalink   : /:year/:month/:title/
 markdown    : kramdown
