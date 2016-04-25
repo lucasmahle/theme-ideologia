@@ -1,15 +1,14 @@
 ---
 layout: default
 ---
-
+{% if page.image != "" and site.data.post.main_image %}{% assign post_image = true %}{% else %}{% assign post_image = false %}{% endif %}
 <div class="container">
 	<div class="page-content">
 		<article class="post-open">
 			<header class="post-header">
-				{% if page.image %}
-					<img src="{{ site.content | prepend: site.baseurl }}{{ page.image }}" alt="Main picture of the post {{ page.title }}" class="img-responsive">
+				{% if post_image %}
+				<img src="{{ site.content | prepend: site.baseurl }}{{ page.image }}" alt="{{ site.data.texts.alt_image }} {{ page.title }}" class="img-responsive">
 				{% endif %}
-
 				<div class="title text-center">
 					<h1>{{ page.title }}</h1>
 				</div>
@@ -20,29 +19,47 @@ layout: default
 			</div>
 
 			<footer class="post-meta">
-				<span>Compartilhe: </span> 
+				{% if site.data.post.share_post %}
+				<span>{{ site.data.texts.share_text }}: </span> 
 				<small> 
-					{% if site.share_twitter %}
+					{% if site.data.post.share_twitter %}
 						<!-- Share Twiiter -->
-						<a class="share-icon" href="https://twitter.com/intent/tweet?text=&quot;{{ page.description | cgi_escape }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+						<a class="share-icon" href="https://twitter.com/intent/tweet?text=&quot;{{ page.description | cgi_escape }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.data.informations.twitter }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
 							<i class="fa fa-twitter-square"></i>
 						</a>
 					{% endif %}
-					{% if site.share_facebook %}
+					{% if site.data.post.share_facebook %}
 						<!-- Share Facebook -->
 						<a class="share-icon" href="https://www.facebook.com/sharer.php?t={{page.description | cgi_escape}}&amp;u={{site.url}}{{page.id}}"
-						onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+						onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
 							<i class="fa fa-facebook-square"></i>
 						</a>
 					{% endif %}
-				</span>
-
-				<span class="pull-right">Postado em {{ page.date | date: '%d/%m/%Y' }}</span>
+					{% if site.data.post.share_linkedin %}
+						<!-- Share LinkedIn -->
+						<a class="share-icon" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{site.url}}{{page.id}}&amp;title={{page.title | cgi_escape}}&amp;summary={{page.description | cgi_escape}}&amp;source={{site.url}}"
+						onclick="window.open(this.href, 'linkedin-share', 'width=550,height=655');return false;">
+							<i class="fa fa-linkedin-square"></i>
+						</a>
+					{% endif %}
+					{% if site.data.post.share_googlep %}
+						<!-- Share Google Plus -->
+						<a class="share-icon" href="https://plus.google.com/share?url={{site.url}}{{page.id}}"
+						onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+							<i class="fa fa-google-plus-square"></i>
+						</a>
+					{% endif %}
+				</small>
+				{% endif %}
+				
+				{% if site.data.post.show_date %}
+				<span class="pull-right">{{ site.data.texts.posted_at }} {{ page.date | date:site.data.post.date_format }}</span>
+				{% endif %}
 			</footer>
 		</article>
 		<section class="post-comments">
 			<div class="the-content">
-				<h3><i class="fa fa-comments-o" aria-hidden="true"></i> Comentários</h3>
+				<h3><i class="fa fa-comments-o" aria-hidden="true"></i> {{ site.data.texts.comments_text }}</h3>
 				{% include comments.html %}
 			</div>
 		</section>

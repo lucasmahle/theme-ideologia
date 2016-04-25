@@ -40,3 +40,14 @@
 		}
 	}
 }
+
+.footer-text {
+	color: #FFF;
+	a {
+		color: #DDD;
+
+		&:hover {
+			color: #FFF;
+		}
+	}
+}

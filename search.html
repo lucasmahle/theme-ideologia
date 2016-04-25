@@ -6,11 +6,11 @@ layout: default
 	<div class="page-content">		
 		<header class="post-header">
 			<div class="title text-center">
-				<h1>Buscar post</h1>
+				<h1>{{ site.data.texts.search_title }}</h1>
 			</div>
 			<div class="text-center search-form">
-				<label for="search">Buscar post:</label>
-				<input type="text" class="form-control" id="search" placeholder="Buscar post">
+				<label for="search">{{ site.data.texts.label_search }}</label>
+				<input type="text" class="form-control" id="search" placeholder="{{ site.data.texts.placeholder_search }}">
 			</div>
 		</header>
 
@@ -20,11 +20,11 @@ layout: default
 	</div>
 </section>
 <script>
-	var jekyll_search = {
+	SimpleJekyllSearch({
 		searchInput: document.getElementById('search'),
 		resultsContainer: document.getElementById('result'),
 		json: '{{ site.baseurl }}/search.json',
-		noResultsText: '<div class="text-center">Nenhum resultado encontrado</div>',
+		noResultsText: '<div class="text-center">{{ site.data.texts.no_search_result }}</div>',
 		searchResultTemplate: 
 			'<li>' +
 				'<a href="{url}" title="{title}">' +
@@ -33,7 +33,5 @@ layout: default
 					'</div>' +
 				'</a>' +
 			'</li>',
-	}
-
-	SimpleJekyllSearch(jekyll_search);
+	});
 </script>

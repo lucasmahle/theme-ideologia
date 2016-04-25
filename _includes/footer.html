@@ -1,25 +1,27 @@
 <footer class="footer container text-center">
 	<div class="social-medias">
-		{% for social in site.social_links %}
-			<a href="{{ social.url }}" title="Social Link - {{ social.site }}" target="_blank">
+		{% for social in site.data.informations.social_links %}
+			<a href="{{ social.url }}" title="Social Link - {{ social.site }}" {% if social.new_window != false %}target="_blank"{% endif %}>
 				<span class="fa-stack fa-lg">
 					<i class="fa fa-circle fa-stack-2x"></i>
-					<i class="fa fa-{{ social.icon }} fa-stack-1x fa-inverse"></i>
+					<i class="fa fa-{{ social.icon }} fa-stack-1x fa-inverse fa-social-media"></i>
 				</span>
 			</a>
 		{% endfor %}
-		<a href="{{ "/feed.xml" : prepend: site.baseurl }}" title="Feed" target="_blank">
+		{% if site.data.informations.enable_feed %}
+		<a href="{{ site.data.informations.feed_url : prepend: site.baseurl }}" title="Feed" target="_blank">
 			<span class="fa-stack fa-lg">
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-feed fa-stack-1x fa-inverse"></i>
 			</span>
 		</a>
+		{% endif %}
 	</div>
 
-	<div>
+	<div class="footer-text">
 		<small>© 2016 All rights reserved. Made with <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, <a href="#much-love-wow"><i class="fa fa-heart"></i></a> and coffee.</small>
 	</div>
-	<div>
-		<small>Theme by <a href="http://lucasmahle.com.br/" title="Theme author">lucasmahle.com.br</a></small>
+	<div class="footer-text">
+		<small>Theme by <a href="http://lucasmahle.com.br/" target="_blank" title="Theme author">lucasmahle.com.br</a></small>
 	</div>
 </footer>

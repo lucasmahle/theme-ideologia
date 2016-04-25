@@ -6,7 +6,7 @@ layout: default
 	<article class="page-content">
 		<header class="post-header">
 			{% if page.image %}
-				<img src="{{ page.image }}" class="img-responsive">
+				<img src="{{ page.image }}" alt="{{ site.data.texts.alt_image }} {{ page.title }}" class="img-responsive">
 			{% endif %}
 
 			<div class="title text-center">

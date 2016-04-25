@@ -3,7 +3,7 @@ layout: post
 title:  "Basic Use: A Guide"
 date:   2016-04-24 21:09:57
 description: In nec purus quis felis tincidunt dictum nec sagittis diam. Donec non est ornare, viverra tortor non, ornare arcu. In blandit leo eget mi vestibulum, id viverra magna auctor. Proin at sem urna. Suspendisse rutrum pharetra nulla. Vestibulum laoreet placerat semper. Curabitur at mauris sem.
-image: /basic-use-a-guide/ideology.jpg
+image: "/basic-use-a-guide/ideology.jpg"
 categories: CategoryOne
 ---
 

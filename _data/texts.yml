@@ -1,0 +1,47 @@
+# Texts
+
+# Pagination
+next_page: "Go to next page"
+prev_page: "Back to previous page"
+go_to_page: "Go to page"
+current_page: "Current page"
+
+# Ler mais
+text_open: "Read More"
+
+posted_at: "Posted at"
+
+share_text: "Share"
+
+comments_text: "Comments"
+
+
+
+# Search
+
+# Titulo na pagina
+search_title: "Search post"
+
+# Label
+label_search: "Search post:"
+
+# Placeholder
+placeholder_search: "Search post"
+
+# No result
+no_search_result: "No result"
+
+
+
+# Categories
+
+# Titulo na pagina
+menu_title: "Categories"
+
+# Titulo no menu
+category_title: "Categories"
+
+
+
+# Post
+alt_image: "Main picture -"

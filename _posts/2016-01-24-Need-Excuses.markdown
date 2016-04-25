@@ -3,7 +3,7 @@ layout: post
 title:  "Need Excuses? Try This"
 date:   2016-01-24 09:11:03
 description: In non sapien metus. Curabitur convallis vehicula elit, sit amet egestas mauris tincidunt in. Proin eu accumsan justo. Quisque hendrerit dictum metus at laoreet. Phasellus eu orci sed libero fringilla ullamcorper. Nam sodales ultrices risus in tempor. Mauris sed elementum mi. In maximus tincidunt rutrum.
-image: /need-excuses-try-this/people.jpg
+image: "/need-excuses-try-this/people.jpg"
 categories: CategoryTwo
 ---
 

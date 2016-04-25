@@ -6,13 +6,13 @@ layout: default
 	<div class="page-content">		
 		<header class="post-header">
 			<div class="title text-center">
-				<h1>Categorias</h1>
+				<h1>{{ site.data.texts.category_title }}</h1>
 			</div>
 		</header>
 
 		<div class="the-content post-categories">
 			{% for tag in site.categories %} 
-				<h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
+				<h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
 				<ul class="post-list">
 					{% assign pages_list = tag[1] %}  
 					{% for post in pages_list %}

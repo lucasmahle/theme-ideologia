@@ -8,7 +8,7 @@ layout: compress
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | array_to_sentence_string }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date | date: "%d/%m/%Y" }}"
+      "date"     : "{{ post.date | date: site.data.post.date_format }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

@@ -4,13 +4,13 @@
 			{% if paginator.previous_page %}
 				{% if paginator.previous_page == 1 %}
 					<li>
-						<a class="prev" href="{{ "/" | prepend: site.baseurl }}" title="Volta para a página {{ previous_page }}">
+						<a class="prev" href="{{ "/" | prepend: site.baseurl }}" title="{{ site.data.texts.prev_page }} {{ previous_page }}">
 							<i class="fa fa-angle-left" aria-hidden="true"></i>
 						</a>
 					</li>
 				{% else %}
 					<li>
-						<a class="prev" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/" title="Volta para a página {{ previous_page }}">
+						<a class="prev" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/" title="{{ site.data.texts.prev_page }} {{ previous_page }}">
 							<i class="fa fa-angle-left" aria-hidden="true"></i>
 						</a>
 					</li>
@@ -19,20 +19,20 @@
 
 			{% for page in (1..paginator.total_pages) %}
 				{% if page == 1 %}
-					<li {% if page == paginator.page %}class="active"{% endif %} title="Ir para a página {{ page }}">
+					<li {% if page == paginator.page %}class="active"{% endif %} title="{{ site.data.texts.go_to_page }} {{ page }}">
 						<a class="prev" href="{{ "/" | prepend: site.baseurl }}" >
 							{{ page }}
 						</a>
 					</li>
 				{% elsif page == paginator.page %}
 					<li class="active">
-						<a href="#" onclick="return false;" title="Página atual">
+						<a href="#" onclick="return false;" title="{{ site.data.texts.current_page }}">
 							{{ page }}
 						</a>
 					</li>
 				{% else %}
 					<li>
-						<a class="prev" href="{{ site.baseurl }}/page/{{ page }}/" title="Ir para a página {{ page }}">
+						<a class="prev" href="{{ site.baseurl }}/page/{{ page }}/" title="{{ site.data.texts.go_to_page }} {{ page }}">
 							{{ page }}
 						</a>
 					</li>
@@ -41,7 +41,7 @@
 
 			{% if paginator.next_page %}
 				<li>
-					<a class="nex" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/" title="Avançar para a página {{ previous_page }}">
+					<a class="nex" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/" title="{{ site.data.texts.next_page }} {{ previous_page }}">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
 					</a>
 				</li>

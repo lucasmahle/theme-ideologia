@@ -3,7 +3,7 @@ layout: post
 title:  "Another Post Again"
 date:   2008-11-31 09:11:03
 description: Nunc et erat pretium, egestas erat ac, egestas nisi. Etiam felis nisi, elementum sed arcu at, porta convallis lorem. Nunc sit amet auctor risus. Integer tempus, ipsum quis feugiat blandit, elit turpis feugiat urna, sit amet maximus ligula mi vitae felis. Nunc ac augue tempus.
-image: /another-post-again/person1.jpeg
+image: "/another-post-again/person1.jpeg"
 categories: CategoryOne
 ---
 

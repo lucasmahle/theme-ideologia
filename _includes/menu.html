@@ -9,25 +9,26 @@
 			</button>
 		</div>
 		<nav class="collapse navbar-collapse">
-			<a href="{{ "/" | prepend: site.baseurl }}" title="Página inicial">
-				<img src="{{ "/assets/img/logo-blog.png" | prepend: site.baseurl }}" class="logo">
-			</a>
+			<div>
+				<a href="{{ "/" | prepend: site.baseurl }}" title="Página inicial">
+					<img src="{{ "/assets/img/logo-blog.png" | prepend: site.baseurl }}" class="logo">
+				</a>
+			</div>
 			<div class="navbar-itens">
 				<ul class="nav navbar-nav">
+					{% if site.data.nav.enable_categories %}
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ site.data.texts.menu_title }} <span class="caret"></span></a>
 						<ul class="dropdown-menu">{% assign tags_list = site.categories %}  
 							{% for tag in tags_list %} 
-								<li><a href="{{ "/category/" : prepend: site.baseurl }}#{{ tag[0] }}">{{ tag[0] | capitalize }}</a></li>
+								<li><a href="{{ "/category/" : prepend: site.baseurl }}#{{ tag[0] | slugify }}">{{ tag[0] }}</a></li>
 							{% endfor %}{% assign tags_list = nil %}
 						</ul>
 					</li>
-					<li>
-						<a href="{{ "/about" : prepend: site.baseurl }}" title="Sobre mim">Sobre mim</a>
-					</li>
-					<li>
-						<a href="{{ "/search" : prepend: site.baseurl }}" title="Buscar post">Busca</a>
-					</li>
+					{% endif %}
+					{% for menu in site.data.nav.menu %} 
+						<li><a href="{{ menu.url : prepend: site.baseurl }}" title="{{ menu.to }}">{{ menu.to }}</a></li>
+					{% endfor %}
 				</ul>
 			</div>
 		</nav>

@@ -3,7 +3,7 @@ layout: post
 title:  "Another Post"
 date:   2009-11-31 09:11:03
 description: Nunc euismod, nibh eu tincidunt interdum, diam augue blandit est, ut accumsan dui lorem id mauris. Praesent at mi dapibus, blandit dolor eget, convallis lacus. Donec eleifend et sem at mollis. Mauris viverra, enim ac feugiat sagittis, metus metus eleifend tellus, dignissim tempor augue nunc.
-image: /another-post/building1.jpg
+image: "/another-post/building1.jpg"
 categories: CategoryTwo
 ---
 

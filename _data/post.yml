@@ -1,0 +1,33 @@
+# Posts list (index)
+
+# Mostra imagem destaque
+post_image: true # true or false
+
+# Descricao do post
+post_excerpt: description # excerpt or description
+
+# Icones de ver post
+btn_icon: true # true or false
+icon_normal: chevron-right # Font Awesome list
+icon_hover: thumbs-o-up # Font Awesome list
+
+# Post open
+
+# Mostra image
+main_image: true # true or false
+
+# Show date
+show_date: true # true or false
+date_format: '%m/%d/%Y'
+
+# Compartilhar post
+share_post: true # true or false
+
+share_facebook: true # true or false
+share_twitter:  true # true or false
+share_linkedin: false # true or false
+share_googlep:  false # true or false
+
+# Comments
+# Permitir
+comments_enable: true # true or false

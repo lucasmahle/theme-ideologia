@@ -3,7 +3,7 @@ layout: post
 title:  "Hello, Portland"
 date:   2016-01-31 09:11:03
 description: Integer pharetra quam tortor, quis sagittis felis pellentesque ac. Nunc pulvinar est in euismod dictum. Sed at tempus magna, a suscipit quam. Mauris libero purus, auctor sed turpis at, egestas sagittis magna. Sed purus metus, vehicula quis fringilla feugiat, ultrices at dolor. Morbi congue suscipit.
-image: /hello-portland/Portland-Slider.jpg
+image: "/hello-portland/Portland-Slider.jpg"
 categories: CategoryTwo
 ---
 

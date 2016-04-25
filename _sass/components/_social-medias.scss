@@ -3,9 +3,14 @@
 	
 	a {
 		color: #222;
+
 		&:hover {
 			text-decoration: none;
 			color: #888;
 		}
+	}
+
+	.fa-social-media {
+		font-size: 17px;
 	}
 }

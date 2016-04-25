@@ -1,0 +1,28 @@
+# Informations
+
+# Social links
+social_links:
+  - site: facebook
+    url: johndoe
+    icon: facebook
+  - site: email
+    url: mailto:johndoe@email.com
+    icon: envelope-o
+    new_window: false
+  - site: github
+    url: johndoe
+    icon: github
+
+twitter: johndoe
+
+disqus_shortname: theme-ideology
+
+# FB APP
+fb_app: 111111111111111
+
+# Metric
+google_analytics: UA-XXXXXXXX-X
+
+# Feed
+enable_feed: true # true or false
+feed_url: /feed.xml # feed url
