@@ -1,0 +1,32 @@
+{% if site.data.post.share_post %}
+<span>{{ site.data.texts.share_text }}: </span> 
+<small> 
+	{% if site.data.post.share_twitter %}
+		<!-- Share Twiiter -->
+		<a class="share-icon" href="https://twitter.com/intent/tweet?text=&quot;{{ page.description | cgi_escape }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.data.informations.twitter }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+			<i class="fa fa-twitter-square"></i>
+		</a>
+	{% endif %}
+	{% if site.data.post.share_facebook %}
+		<!-- Share Facebook -->
+		<a class="share-icon" href="https://www.facebook.com/sharer.php?t={{page.description | cgi_escape}}&amp;u={{site.url}}{{page.id}}"
+		onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+			<i class="fa fa-facebook-square"></i>
+		</a>
+	{% endif %}
+	{% if site.data.post.share_linkedin %}
+		<!-- Share LinkedIn -->
+		<a class="share-icon" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{site.url}}{{page.id}}&amp;title={{page.title | cgi_escape}}&amp;summary={{page.description | cgi_escape}}&amp;source={{site.url}}"
+		onclick="window.open(this.href, 'linkedin-share', 'width=550,height=655');return false;">
+			<i class="fa fa-linkedin-square"></i>
+		</a>
+	{% endif %}
+	{% if site.data.post.share_googlep %}
+		<!-- Share Google Plus -->
+		<a class="share-icon" href="https://plus.google.com/share?url={{site.url}}{{page.id}}"
+		onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+			<i class="fa fa-google-plus-square"></i>
+		</a>
+	{% endif %}
+</small>
+{% endif %}

@@ -2,13 +2,13 @@
 
 # Social links
 social_links:
-  - site: facebook
-    url: johndoe
-    icon: facebook
   - site: email
     url: mailto:johndoe@email.com
     icon: envelope-o
     new_window: false
+  - site: facebook
+    url: johndoe
+    icon: facebook
   - site: github
     url: johndoe
     icon: github

@@ -2,41 +2,59 @@
 layout: post
 title:  "Basic Use: A Guide"
 date:   2016-04-24 21:09:57
-description: In nec purus quis felis tincidunt dictum nec sagittis diam. Donec non est ornare, viverra tortor non, ornare arcu. In blandit leo eget mi vestibulum, id viverra magna auctor. Proin at sem urna. Suspendisse rutrum pharetra nulla. Vestibulum laoreet placerat semper. Curabitur at mauris sem.
+description: Introdução do conteúdo
 image: "/basic-use-a-guide/ideology.jpg"
 categories: CategoryOne
 ---
 
-If this is your first time using Jekyll, don't be scared! Installing and setting up this particular theme is very, very simple. I'll walk you through it.
+## Índice
 
-## Installation
-For now, installation of this theme isn't available through the command line or package managers. Instead, use the Git Repo to grab what you need through a .zip file.
+- [Introduction](#introduction)
+- [Structure](#structure)
+- [Translate Phrases](#translate-phrases)
+- [Choosing beautiful colors](#choosing-beautiful-colors)
+- [Creating a new post](#creating-a-new-post)
 
-1. Fork and Star the [repo][Artist Theme Repo]
-2. Download the .zip and save it to your directory
-3. Install Jekyll
-4. (Optional) Install Gulp - you certainly don't need it
 
-#### Installing Jekyll
-Open the terminal and enter the following command: `gem install jekyll`. Mac users may need to use `sudo`.
+<h2 id="introduction">Introduction</h2>
 
-For a full Jekyll installation guide, reference the official [Jekyll Docs][Jekyll Docs].
+Ideologia é um tema criado para Jekyll. Ele foi desenvolvido pensando na simplicidade e na facilidade. A estrutura dele é simples. Ideologia é uma homenagem a música "Ideologia" do cantor Cazuza. A base dele é bootstrap. Sinta-se livre para modificar o blog, só espero que mantenha os créditos ao autor.
 
-- - -
+Se você gostou do blog, não deixe de mandar um "oi" para mim pelo e-mail <a href="mailto:lucassmahle@gmail.com">lucassmahle@gmail.com</a>. Se quiser me pagar um café, eu iria adorar :)
 
-## Using Jekyll: Servers and Posts
 
-#### Launching a Local Jekyll Server
+<h2 id="structure">Structure</h2>
 
-Using the terminal navigate to your directory then enter the command: `jekyll serve` to start a local server. In your browser enter the local address that Jekyll gives you.
+A estrutura é simples, poderia ser mais limpa ainda, mas preferi manter a originalidade.
+Veja a árvore de estrutura:
 
-#### Making Posts
-
-To make a new post, create a new `.md` file following this file structure `2020-12-31-post-title.md` within the `_posts` directory. Pay close attention to the head matter at the top of each post. If it's incorrect your Jekyll server will throw errors.
-
-#### Customizing
-
-Change your primary and accent colors inside `assets/css/1-base/_vars.sass` by changing the `$primary` and `$accent-color` variables for site-wide changes.
-
-[Jekyll Docs]: http://jekyllrb.com/docs/installation/
-[Artist Theme Repo]: https://github.com/ninapetrop/Artist-Theme
+* __data ->_ Configurações e textos
+	* _author.yml ->_ Informações sobre o autor das postagens
+	* _informations.yml ->_ Informações gerais (compartilhamento, monitoramento, etc)
+	* _nav.yml ->_ Configuração do menu 
+	* _post.yml ->_ Configurações de posts e páginas
+	* _texts.yml ->_ Textos e frases
+* __includes ->_ Partes/componentes
+	* _article.html ->_ Componente para listagem na página inicial
+	* _comments.html ->_ Componente para exibição de comentários
+	* _footer.html ->_ Rodapé
+	* _head.html ->_ Meta tags, scripts e css
+	* _menu.html ->_ Menu
+	* _pagination.html ->_ Componente de paginação
+	* _share.html ->_ Componente para compartilhamento
+* __layouts ->_ Estruturas
+	* _compress.html ->_ Para minificar o HTML
+	* _default.html ->_ Layout padrão
+	* _page.html ->_ Layout de página
+	* _post.html ->_ Layout de post
+* __posts  ->_ Postagens
+* __sass ->_ CSS
+	* _bootstrap ->_ Arquivos do bootstrap
+	* _components ->_ Componentes para montar o css
+	* __bootstrap.scss ->_ Chama o bootstrap
+	* __style.scss ->_ Chama o css
+* _assets ->_ 
+	* _content ->_ Conteúdo dos posts
+	* _css ->_ Chama o scss
+	* _img ->_ Imagens do tema
+	* _js ->_ Javascript

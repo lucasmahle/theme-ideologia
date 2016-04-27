@@ -6,8 +6,9 @@ A free, open source, theme for Jekyll based on bootstrap.
 - Melhorar Menu
 - Criar posts
 	- Ideologia
-	- Lorem ipsun no about
-	- Erro 404
 	- Basic Usage (usar no readme)
 	- Criar imagens mais bonitas para os posts
 	- Criar gerador de post sh
+- Imagem de compartilhamento
+- Logo ideologia
+- Favicon
