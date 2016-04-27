@@ -12,6 +12,9 @@ social_links:
   - site: github
     url: johndoe
     icon: github
+  - site: rss
+    url: /feed.xml
+    icon: feed
 
 twitter: johndoe
 
@@ -22,7 +25,3 @@ fb_app: 111111111111111
 
 # Metric
 google_analytics: UA-XXXXXXXX-X
-
-# Feed
-enable_feed: true # true or false
-feed_url: /feed.xml # feed url

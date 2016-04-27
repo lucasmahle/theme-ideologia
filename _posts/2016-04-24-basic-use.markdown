@@ -25,7 +25,7 @@ Se você gostou do blog, não deixe de mandar um "oi" para mim pelo e-mail <a hr
 
 <h2 id="structure">Structure</h2>
 
-A estrutura é simples, poderia ser mais limpa ainda, mas preferi manter a originalidade.
+A estrutura é simples, poderia ser ainda mais limpa, mas preferi manter a originalidade.
 Veja a árvore de estrutura:
 
 * __data ->_ Configurações e textos
