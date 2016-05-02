@@ -11,7 +11,7 @@ categories: CategoryOne
 
 - [Introduction](#introduction)
 - [Structure](#structure)
-- [Translate Phrases](#translate-phrases)
+- [Translate texts](#translate-texts)
 - [Choosing beautiful colors](#choosing-beautiful-colors)
 - [Creating a new post](#creating-a-new-post)
 
@@ -28,33 +28,52 @@ Se você gostou do blog, não deixe de mandar um "oi" para mim pelo e-mail <a hr
 A estrutura é simples, poderia ser ainda mais limpa, mas preferi manter a originalidade.
 Veja a árvore de estrutura:
 
-* __data ->_ Configurações e textos
-	* _author.yml ->_ Informações sobre o autor das postagens
-	* _informations.yml ->_ Informações gerais (compartilhamento, monitoramento, etc)
-	* _nav.yml ->_ Configuração do menu 
-	* _post.yml ->_ Configurações de posts e páginas
-	* _texts.yml ->_ Textos e frases
-* __includes ->_ Partes/componentes
-	* _article.html ->_ Componente para listagem na página inicial
-	* _comments.html ->_ Componente para exibição de comentários
-	* _footer.html ->_ Rodapé
-	* _head.html ->_ Meta tags, scripts e css
-	* _menu.html ->_ Menu
-	* _pagination.html ->_ Componente de paginação
-	* _share.html ->_ Componente para compartilhamento
-* __layouts ->_ Estruturas
-	* _compress.html ->_ Para minificar o HTML
-	* _default.html ->_ Layout padrão
-	* _page.html ->_ Layout de página
-	* _post.html ->_ Layout de post
-* __posts  ->_ Postagens
-* __sass ->_ CSS
-	* _bootstrap ->_ Arquivos do bootstrap
-	* _components ->_ Componentes para montar o css
-	* __bootstrap.scss ->_ Chama o bootstrap
-	* __style.scss ->_ Chama o css
-* _assets ->_ 
-	* _content ->_ Conteúdo dos posts
-	* _css ->_ Chama o scss
-	* _img ->_ Imagens do tema
-	* _js ->_ Javascript
+* `_data` -> Configurações e textos
+	* `author.yml` -> Informações sobre o autor das postagens
+	* `informations.yml` -> Informações gerais (compartilhamento, monitoramento, etc)
+	* `nav.yml` -> Configuração do menu 
+	* `post.yml` -> Configurações de posts e páginas
+	* `texts.yml` -> Textos e frases
+* `_includes` -> Partes/componentes
+	* `article.html` -> Componente para listagem na página inicial
+	* `comments.html` -> Componente para exibição de comentários
+	* `footer.html` -> Rodapé
+	* `head.html` -> Meta tags, scripts e css
+	* `menu.html` -> Menu
+	* `pagination.html` -> Componente de paginação
+	* `share.html` -> Componente para compartilhamento
+* `_layouts` -> Estruturas
+	* `compress.html` -> Para minificar o HTML
+	* `default.html` -> Layout padrão
+	* `page.html` -> Layout de página
+	* `post.html` -> Layout de post
+* `_posts`  -> Postagens
+* `_sass` -> CSS
+	* `bootstrap` -> Arquivos do bootstrap
+	* `components` -> Componentes para montar o css
+	* `_bootstrap`.scss` -> Chama o bootstrap
+	* `_style`.scss` -> Chama o css
+* `assets` -> 
+	* `content` -> Conteúdo dos posts
+	* `css` -> Chama o scss
+	* `img` -> Imagens do tema
+	* `js` -> Javascript
+
+
+<h2 id="translate-texts">Translate texts</h2>
+
+Todas os textos estão dentro de _data. Basta modificar seu conteúdo que está dividido por finalidade.
+
+
+<h2 id="choosing-beautiful-colors">Choosing beautiful colors</h2>
+
+Para usar cores bonitas no seu tema, você pode entrar em [Adobe Kuler](adobekoler), escolher a regra de cores como "Sombra", arrastar os ponteiros para a cor deseja e alterar as seguintes opções dentro de `_sass/bootstrap/_variables.scss`:
+
+`$body-bg`: First value
+
+`$link-color`: Third value
+
+`$link-hover-color`: Second value
+
+
+<h2 id="creating-a-new-post">Choosing beautiful colors</h2>
